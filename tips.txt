@@ -11,6 +11,7 @@ django-admin version (en caso de no estar seguro de la version usada)
 python manage.py runserver (correr la app)
 
 en caso de ubuntu (y la consola de pythonanywhere) los comandos son:
+source myenvName/bin/activate
 
 
 cada carpeta es una especie de modulo de tu aplicacion o pagina.
