@@ -1,0 +1,27 @@
+
+para empezar a trabajar hazlo en tu repo local, haces push al 
+origin master y luego pull desde el repo de pythonanywhere
+
+siempre trabaja en tu ambiente de python, 
+en caso de windows los comandos utiles son:
+
+conda info --envs (ver informacion de los ambientes)
+activate nombredelambiente 
+django-admin version (en caso de no estar seguro de la version usada)
+python manage.py runserver (correr la app)
+
+en caso de ubuntu (y la consola de pythonanywhere) los comandos son:
+
+
+cada carpeta es una especie de modulo de tu aplicacion o pagina.
+en este caso "elblog" es un blog, este va a tener sus propios test,
+modelos de datos, logica por abajo y sus views (creo).
+
+para que la pagina (en este caso "tutorial_dgirls") sepa sobre este 
+modulo se debe agregar a varios lados, primero al settings.py de la
+pagina, segundo inscribir las urls en el urls.py con expresiones
+regulares para que matchee con las del modulo.
+
+para la logica del modulo se utiliza el archivo views.py, el cual
+conecta informacion del modelo (o los datos guardados) y los templates,
+que son lo que uno ve como pagina.
