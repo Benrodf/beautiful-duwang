@@ -17,3 +17,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    ## al no especificar una primary key, django crea una llamada pk que es un numero int quizas.
